@@ -1,0 +1,29 @@
+#!/bin/bash
+program=build/$1
+example=exs/$1/$2.ex
+command="$program < $example"
+
+if [ ! -f $program ]; then
+    echo "El programa $program no existe"
+    exit 1
+fi
+
+if [ ! -f $example ]; then
+    echo "El ejemplo $example no existe"
+    exit 1
+fi
+
+echo "contenido del ejemplo $example"
+echo "----------------------------------"
+cat $example
+echo "----------------------------------"
+echo
+echo
+echo "Ejecutando $command"
+echo "----------------------------------"
+
+$program < $example
+
+
+echo
+echo
