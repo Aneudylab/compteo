@@ -6,7 +6,7 @@ build/lexer1: create_build_dir tmp/lexer1.c
 	gcc -o build/lexer1 tmp/lexer1.c -lfl
 
 tmp/lexer1.c: create_tmp_dir
-	flex -o tmp/lexer1.c src/lexer1.l
+	flex -o tmp/lexer1.c src/lexer1/lexer1.l
 
 create_tmp_dir:
 	$(create_dir) tmp
