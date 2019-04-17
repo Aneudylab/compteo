@@ -1,0 +1,8 @@
+P 2 R
+T 125 R
+P 3 R
+T 75 G
+P 85 G
+P 120 G
+T 4 R
+P 88 G
